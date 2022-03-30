@@ -1,0 +1,24 @@
+# ------------------------------
+# File GitHub Actions
+#
+# Made Georgiy Zyryanov
+# ------------------------------
+
+name: My_GitHub_Action
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Компиляция
+        run: g++ main.cpp
+        
+      - name: Running app
+        run: ./a.out 10
