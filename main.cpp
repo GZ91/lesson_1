@@ -8,7 +8,7 @@ int main(int count, char ** val)
     {
         std::cout << i+1 << "\t:" << "Hello !" << std::endl;
         if (iter - 1 == i)
-            std::cout << "wery good nice" << std::endl;
+            std::cout << "very good nice" << std::endl;
     }
     return 0;
 }
