@@ -24,8 +24,8 @@ jobs:
         run: ./a.out 100
         
   build_second:
-    runs-on: windows
-    needs: [build]
+    runs-on: macos
+    needs: build
     steps:
       - uses: actions/checkout@v3
       
