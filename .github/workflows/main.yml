@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Компиляция
-        run: g++ main.cpp -o a.exe
+        run: g++ main.cpp 
         
       - name: Running app
-        run: a.exe 100
+        run: ./a.out 100
