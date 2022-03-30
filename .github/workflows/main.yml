@@ -22,3 +22,15 @@ jobs:
         
       - name: Running app
         run: ./a.out 100
+        
+  build_second:
+    runs-on: windows
+    needs: [build]
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Компиляция
+        run: g++ main.cpp -o a.exe
+        
+      - name: Running app
+        run: a.exe 100
